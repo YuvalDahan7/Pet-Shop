@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Images\\Eagle.jpg",
+      "PackagePath": "staticwebassets\\Images\\Eagle.jpg"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Images\\Fish.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Fish.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Images\\Hello.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Hello.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Images\\Malinois.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Malinois.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Images\\Parrots.jpeg",
+      "PackagePath": "staticwebassets\\Images\\Parrots.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Images\\ShinTzu.jpeg",
+      "PackagePath": "staticwebassets\\Images\\ShinTzu.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Images\\Speaker.png",
+      "PackagePath": "staticwebassets\\Images\\Speaker.png"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Images\\צילום מסך 2023-05-15 124047.png",
+      "PackagePath": "staticwebassets\\Images\\צילום מסך 2023-05-15 124047.png"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Scripts\\Sounds\\Eagel.mp4",
+      "PackagePath": "staticwebassets\\Scripts\\Sounds\\Eagel.mp4"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Scripts\\Sounds\\Fish.mp4",
+      "PackagePath": "staticwebassets\\Scripts\\Sounds\\Fish.mp4"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Scripts\\Sounds\\Parrot.mp4",
+      "PackagePath": "staticwebassets\\Scripts\\Sounds\\Parrot.mp4"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Scripts\\Sounds\\ShinTzu.mp4",
+      "PackagePath": "staticwebassets\\Scripts\\Sounds\\ShinTzu.mp4"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Scripts\\jquery-3.3.1.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery-3.3.1.js"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Scripts\\jquery.validate.min-1.17.0.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery.validate.min-1.17.0.js"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Scripts\\jquery.validate.unobtrusive.min-3.2.10.js",
+      "PackagePath": "staticwebassets\\Scripts\\jquery.validate.unobtrusive.min-3.2.10.js"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Styles\\Admin.css",
+      "PackagePath": "staticwebassets\\Styles\\Admin.css"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Styles\\Create.css",
+      "PackagePath": "staticwebassets\\Styles\\Create.css"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Styles\\Details.css",
+      "PackagePath": "staticwebassets\\Styles\\Details.css"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Styles\\Edit.css",
+      "PackagePath": "staticwebassets\\Styles\\Edit.css"
+    },
+    {
+      "Id": "C:\\Users\\dahan\\OneDrive\\Desktop\\Project in process\\PeitsShop\\PeitsShop\\wwwroot\\Styles\\Index.css",
+      "PackagePath": "staticwebassets\\Styles\\Index.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PetsShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.PetsShop.props",
+      "PackagePath": "build\\PetsShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.PetsShop.props",
+      "PackagePath": "buildMultiTargeting\\PetsShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.PetsShop.props",
+      "PackagePath": "buildTransitive\\PetsShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

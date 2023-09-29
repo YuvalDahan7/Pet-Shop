@@ -1,0 +1,69 @@
+﻿.container {
+margin-top: 7%;
+}
+
+#details-table {
+background-color: white;
+width: 85%;
+float: right;
+}
+
+#details-table {
+border-collapse: collapse;
+border: 1px solid black;
+}
+
+#details-table tr:nth-child(odd) {
+    background: lightsteelblue;
+}
+
+#details-table td {
+    border: 1px dashed #000;
+    color: black;
+    padding: 12px;
+    width: 90px;
+}
+
+#animal-img {
+width: 20%;
+}
+
+img {
+border: 1px solid black;
+border-radius: 50%;
+height: 200px;
+width: 200px;
+}
+
+#comments-title {
+font-weight: bold;
+}
+
+.comment-container {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #f9f9f9;
+}
+
+.comments {
+margin-bottom: 20px;
+}
+
+.comment {
+border: 1px solid #ddd;
+padding: 10px;
+margin-bottom: 10px;
+background-color: #fff;
+}
+
+textarea.form-control {
+width: 50%;
+}
+
+.btn-primary {
+background-color: #007bff;
+color: #fff;
+}

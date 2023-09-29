@@ -1,0 +1,64 @@
+﻿@model PeitsShop.Models.Animal
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/Styles/Details.css" />
+
+<body>
+    <div class="container">
+        <div id="dispaly-animal">
+
+            <table id="details-table">
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Name) </td>
+                        <td>@Html.DisplayFor(model => model.Name) </td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Age) </td>
+                        <td>@Html.DisplayFor(model => model.Age)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Description) </td>
+                        <td>@Html.DisplayFor(model => model.Description)</td>
+                    </tr>
+                    <tr>
+                        <td>@Html.DisplayNameFor(model => model.Category)</td>
+                        <td>@Html.DisplayFor(model => model.Category.Name)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="animal-img">
+            <img src="@Html.DisplayFor(model => model.Image)" />
+        </div>
+    </div>
+   @*  <div>
+        <a asp-action="Edit" asp-route-id="@Model?.AnimalId">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+ *@
+    <div class="comments-container">
+        <p id="comments-title">Comments: </p>
+        <div class="comments">
+            @foreach(var comment in Model.Comments)
+            {
+                <div class="comment"> 
+                    <p> @comment.CommentContent </p>
+                </div>
+            }
+        </div>
+        <div id="textarea-container"> 
+            <form asp-action="AddComment" asp-controller="Animals">
+                <textarea name="commentText" rows:1 cols="50"></textarea>
+                <input type="number" name="AnimalId" asp-for="AnimalId" hidden />
+                <button class="btn-primary" type="submit"> Send </button>
+            </form>
+        </div>
+    </div>
+</body>
+

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PeitsShop.Models.Animal>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Catalog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/Styles/Index.css" />
+</head>
+
+<body>
+    <form asp-action="Catalog" asp-controller="Animals">
+        <div class="Selector">
+            <h4> Please selecte a category: </h4>
+            <select name="categoryId" id="categoryDropdown">
+                <option value="0">All</option>
+                @foreach (var category in ViewBag.Categories)
+                {
+                    <option value="@category.CategoryId">@category.Name</option>
+                }
+            </select>
+            <button id="submit-btn" type="submit"> Show </button>
+        </div>
+    </form>
+
+
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr id="thead">
+                        <td id="table-titles" class="table">Protrait</td>
+                        <td id="table-titles" class="table">Name</td>
+                        <td id="table-titles" class="table">For comment and more</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td class="tbody"> <img src="@item.Image"></td>
+                            <td class="tbody">@item.Name</td>
+                            <td class="tbody"> <a asp-action="Details" asp-controller="Animals" asp-route-animalId="@item.AnimalId"> Details</a> </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+</body>
+</html>

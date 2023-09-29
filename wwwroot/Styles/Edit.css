@@ -1,0 +1,30 @@
+﻿.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border: 3px solid black;
+    width: 40%;
+    margin-left: 30%;
+    padding: 15px;
+}
+
+.col-md-4 {
+    text-align: left;
+}
+
+.btn {
+    text-align: center;
+    margin-left: 50%;
+}
+
+img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+input {
+    margin: 5px;
+}

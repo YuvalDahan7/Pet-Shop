@@ -1,0 +1,15 @@
+﻿@model PeitsShop.Models.Animal
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="AnimalId" />
+        <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Are you sure you want to remove that animal?')" />
+        <input name="id" value="@Model.AnimalId" hidden />
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

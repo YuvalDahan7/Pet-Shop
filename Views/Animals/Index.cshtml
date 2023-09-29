@@ -1,0 +1,48 @@
+﻿@model IEnumerable<PeitsShop.Models.Animal>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/Styles/Index.css"/>
+ </head>
+
+<body>
+
+    <h3>The two most highly rated pets today are:</h3>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr id="thead">
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Image) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Name) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Age) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Description) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.SoundVoice) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Comments) </th>
+                </tr>
+            </thead>
+            <tbody>
+                 @foreach (var item in Model) {
+                    <tr class="tr table">
+                        <td class="tbody"> <img class="img" src="@item.Image"/> </td>
+                        <td class="tbody"> @Html.DisplayFor(modelItem => item.Name) </td>
+                        <td class="tbody"> @Html.DisplayFor(modelItem => item.Age) </td>
+                        <td class="tbody"> @Html.DisplayFor(modelItem => item.Description) </td>
+                        <td class="tbody"> <audio controls hidden"><source src="@Url.Content($"{item.SoundVoice}")" type="audio/mpeg" id="audioElement"></audio></td>
+                     <td class="tbody"> @Html.DisplayFor(modelItem => item.Comments.Count) </td>
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

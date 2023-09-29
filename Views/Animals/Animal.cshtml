@@ -1,0 +1,34 @@
+﻿@model IEnumerable<PeitsShop.Models.Animal>
+
+@{
+    ViewData["Title"] = "Animal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="Animal" action-controller="Animals">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr class="tr table">
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Name) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Age) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Description) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Category) </th>
+                    <th id="table-titles" class="th table"> @Html.DisplayNameFor(model => model.Comments) </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="tr table">
+                        <td class="td table"> @Html.DisplayFor(modelItem => item.Name) </td>
+                        <td class="td table"> @Html.DisplayFor(modelItem => item.Age) </td>
+                        <td class="td table"> @Html.DisplayFor(modelItem => item.Description) </td>
+                        <td class="td table"> @Html.DisplayFor(modelItem => item.Category) </td>
+                        <td class="td table"> @Html.DisplayFor(modelItem => item.Comments) </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</form>

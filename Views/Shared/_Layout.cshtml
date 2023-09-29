@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/Styles/Styles.css" />
+</head>
+<body>
+    <h1>𝘗𝘦𝘵 𝘚𝘩𝘰𝘱 𝘐𝘯 𝘛𝘰𝘸𝘯</h1>
+    <div>
+        <div class="Menu">
+            <ul>
+                <li class="bar" id="first-option"><a href="/Animals/Index">Home</a></li>
+                <li class="bar" id="second-option" style="margin-left: 15px"><a href="/Animals/Catalog"> Catalog </a></li>
+                <li class="bar" id="third-option" style="margin-left: 30px"><a href="/Animals/Administrator">Administrator</a></li>
+                
+            </ul>
+        </div>
+    </div>
+  
+    <div>
+        @RenderBody()
+    </div>
+    <script src="~/scripts/jquery-3.3.1.js"></script>
+    <script src="~/scripts/jquery.validate.min-1.17.0.js"></script>
+    <script src="~/scripts/jquery.validate.unobtrusive.min-3.2.10.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+        height: 100vh;
+        max-width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: white;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 55px;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+    }
+
+    .bar {
+        background-color: whitesmoke;
+        border-radius: 15%;
+        text-decoration-color: black;
+    }
+
+    #first-option {
+        height: 20px;
+        width:40px;
+    }
+    #second-option {
+        height: 20px;
+        width: 50px;
+    }
+    #third-option {
+        height: 20px;
+        width: 100px;
+    }
+</style>
